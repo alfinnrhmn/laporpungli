@@ -1,0 +1,79 @@
+/* 1. SELESAIKAN STANDAR IMPOR TAILWIND V4 TERBARU */
+@import "tailwindcss";
+
+/* 2. DEFINISIKAN LAYER KOMPONEN DENGAN SINTAKSIS V4 */
+@theme {
+  /* Jika Anda memiliki konfigurasi custom theme warna/border, taruh di sini */
+}
+
+@utility sidebar-link-inactive {
+  @apply flex items-center gap-3 px-4 py-3 text-gray-500 hover:bg-gray-50 hover:text-gray-900 rounded-xl font-medium text-[15px] transition-colors cursor-pointer;
+}
+
+@utility sidebar-link-active {
+  @apply flex items-center gap-3 px-4 py-3 bg-[#eff6ff] text-[#2563eb] rounded-xl font-semibold text-[15px] transition-colors cursor-pointer;
+}
+
+@utility card-base {
+  @apply bg-white border border-gray-100 rounded-[24px] p-6 shadow-[0_4px_20px_rgba(0,0,0,0.02)] transition-all;
+}
+
+@utility card-interactive {
+  @apply card-base hover:shadow-md;
+}
+
+@utility card-section {
+  @apply bg-white rounded-[24px] p-8 shadow-sm border border-gray-100;
+}
+
+@utility card-widget {
+  @apply bg-white rounded-[24px] p-6 shadow-sm border border-gray-100;
+}
+
+@utility card-header-badge-red {
+  @apply px-3 py-1.5 bg-red-50/50 text-red-500 border border-red-100 text-[12px] font-bold rounded-full flex items-center gap-1.5;
+}
+
+@utility card-header-badge-yellow {
+  @apply px-3.5 py-1.5 bg-yellow-100/50 text-yellow-600 border border-yellow-200 text-[12px] font-bold rounded-full flex items-center gap-1.5;
+}
+
+@utility input-text-field {
+  @apply w-full px-4 py-3.5 bg-white border border-gray-200 rounded-xl text-[15px] text-gray-900 focus:outline-none focus:ring-2 focus:ring-[#2563eb]/20 focus:border-[#2563eb] transition-all outline-none;
+}
+
+@utility input-textarea-field {
+  @apply w-full px-4 py-3 bg-white border border-gray-200 rounded-xl text-[14px] focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 outline-none transition-all resize-none;
+}
+
+@utility checkbox-custom {
+  @apply w-4 h-4 rounded border-gray-300 text-[#2563eb] focus:ring-[#2563eb] cursor-pointer;
+}
+
+@utility btn-primary-blue {
+  @apply bg-[#0c3e9c] hover:bg-blue-800 text-white font-bold py-4 rounded-xl text-[16px] transition-all shadow-[0_4px_14px_rgba(12,62,156,0.3)] flex items-center justify-center cursor-pointer;
+}
+
+@utility btn-accent-blue {
+  @apply bg-[#2563eb] hover:bg-blue-700 text-white px-6 py-2.5 rounded-lg text-[15px] font-medium shadow-sm flex items-center justify-center transition-all cursor-pointer;
+}
+
+@utility btn-fixed-bottom-continue {
+  @apply w-full sm:w-auto px-8 py-3 bg-[#2563eb] hover:bg-blue-700 text-white rounded-xl font-bold text-[14px] flex items-center justify-center gap-2 transition-colors shadow-sm cursor-pointer;
+}
+
+@utility btn-outline-action {
+  @apply w-full sm:w-auto px-6 py-3 border border-gray-200 text-gray-700 bg-white hover:bg-gray-50 rounded-xl font-bold text-[14px] flex items-center justify-center transition-colors cursor-pointer;
+}
+
+@utility btn-outline-widget {
+  @apply w-full py-3 bg-white border border-gray-200 hover:border-gray-300 hover:bg-gray-50 text-gray-700 rounded-xl font-bold text-[13px] flex items-center justify-center gap-2 transition-all shadow-sm cursor-pointer;
+}
+
+@utility auth-card-container {
+  @apply w-full max-w-[1000px] bg-white rounded-[32px] shadow-[0_8px_40px_rgb(0,0,0,0.04)] overflow-hidden flex flex-col md:flex-row min-h-[600px];
+}
+
+@utility auth-header-nav-link {
+  @apply text-[15px] font-medium text-gray-500 hover:text-gray-900 transition-colors cursor-pointer;
+}
